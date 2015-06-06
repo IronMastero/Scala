@@ -1,0 +1,24 @@
+#Logging into Root else always use sudo
+sudo -i
+
+#Running on Ubuntu 14.04.02 LTS 
+#If you have old scala installed remove and install new directory
+sudo apt-get remove scala-library scala
+wget http://www.scala-lang.org/files/archive/scala-2.11.6.deb
+sudo dpkg -i scala-2.11.6.deb
+#Update -good practice
+
+sudo apt-get update
+sudo apt-get install scala
+ 
+# sbt installs
+# remove sbt:>  sudo apt-get purge sbt.
+ 
+wget https://bintray.com/artifact/download/sbt/debian/sbt-0.13.8.deb
+sudo dpkg -i sbt-0.13.8.deb
+
+#update
+sudo apt-get update
+
+sudo apt-get install sbt
+
